@@ -1,39 +1,125 @@
-body {
+/* RESET */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #141e30, #243b55);
     color: white;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00f2fe;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00f2fe;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 20px;
     text-align: center;
 }
 
-header {
-    padding: 60px 20px;
+.section h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
 }
 
-h1 {
-    font-size: 42px;
-}
-
-#projects {
-    padding: 40px;
+/* PROJECTS */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .project-card {
     background: rgba(255,255,255,0.1);
-    margin: 20px auto;
-    padding: 20px;
-    width: 70%;
+    padding: 25px;
+    width: 300px;
     border-radius: 15px;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.05);
     background: rgba(255,255,255,0.2);
 }
 
+/* CONTACT */
+#contact a {
+    color: #00f2fe;
+    text-decoration: none;
+}
+
+/* FOOTER */
 footer {
     padding: 20px;
+    text-align: center;
     opacity: 0.7;
 }
