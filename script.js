@@ -1,5 +1,5 @@
 // Typing Animation
-const text = "Hi, I'm Pijush Hazra";
+const text = "Hi, I'm Pijush";
 let index = 0;
 
 function typeEffect() {
