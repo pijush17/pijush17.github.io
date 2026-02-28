@@ -1,58 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Name - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-top: 30px;
-        }
-        .box {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        a {
-            color: blue;
-        }
-    </style>
+    <title>Pijush Hazra | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Your Name</h1>
+<header>
+    <h1 class="typing"></h1>
     <p>Prefinal Year Student | Python & SQL Learner</p>
+</header>
 
-    <div class="section box">
-        <h2>About Me</h2>
-        <p>I am a prefinal year student passionate about programming and problem solving.</p>
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card" onclick="openProject('https://github.com/pijush17')">
+        <h3>Library Management System</h3>
+        <p>SQL based student & book record management</p>
     </div>
 
-    <div class="section box">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>HTML</li>
-        </ul>
+    <div class="project-card" onclick="openProject('https://github.com/pijush17')">
+        <h3>Number Analyzer</h3>
+        <p>Python program using condition statements</p>
     </div>
 
-    <div class="section box">
-        <h2>Projects</h2>
-        <p><b>Library Management System</b> - Built using SQL.</p>
-        <p><b>Number Analyzer</b> - Python program using conditional statements.</p>
-    </div>
+</section>
 
-    <div class="section box">
-        <h2>Contact</h2>
-        <p>Email: yourmail@gmail.com</p>
-    </div>
+<footer>
+    © 2026 Pijush Hazra
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
