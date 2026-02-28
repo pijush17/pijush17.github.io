@@ -1,18 +1,18 @@
 // Typing Animation
 const text = "Hi, I'm Pijush Hazra";
-let i = 0;
+let index = 0;
 
-function typeWriter() {
-    if (i < text.length) {
-        document.querySelector(".typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100);
+function typeEffect() {
+    if (index < text.length) {
+        document.querySelector(".typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 80);
     }
 }
 
-window.onload = typeWriter;
+window.onload = typeEffect;
 
-// Open project on click
+// Open Project Function
 function openProject(url) {
     window.open(url, "_blank");
 }
